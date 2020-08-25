@@ -112,7 +112,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("password").style.backgroundColor = "inherit";
   if (form.password.value == "" || form.password.length < 1) {
     statusPassword.innerText = "udfyld feltet";
-    document.getElementById("password").style.backgroundColor = "rrgba(240, 95, 95, 0.281)";
+    document.getElementById("password").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.password.focus();
     status = false;
   }
