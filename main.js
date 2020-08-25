@@ -25,21 +25,21 @@ form.addEventListener("submit", function(event) {
   document.getElementById("forNavn").style.backgroundColor = "inherit";
   if (form.forNavn.value == "") {
     statusFornavn.innerText = "Indtast fornavn";
-    document.getElementById("forNavn").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("forNavn").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     status = false;
   }
   statusEfternavn.innerText = "";
   document.getElementById("efterNavn").style.backgroundColor = "inherit";
   if (form.efterNavn.value == "") {
     statusEfternavn.innerText = "Indtast efternavn";
-    document.getElementById("efterNavn").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("efterNavn").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     status = false;
   }
   statusEmail.innerText = "";
   document.getElementById("email").style.backgroundColor = "inherit";
   if (form.email.value == "" || atpos < 1 || dotpos < atpos + 2 || form.email1.value.length <= dotpos + 2) {
     statusEmail.innerText = "Angiv gyldig E-mail";
-    document.getElementById("email").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("email").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.email.focus();
     status = false;
   }
@@ -47,7 +47,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("gade").style.backgroundColor = "inherit";
   if (form.gade.value == "") {
     statusGade.innerText = "Indtast gadenavn";
-    document.getElementById("gade").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("gade").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.gade.focus();
     status = false;
   }
@@ -55,7 +55,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("by").style.backgroundColor = "inherit";
   if (form.by.value == "") {
     statusBy.innerText = "Indtast by";
-    document.getElementById("by").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("by").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.by.focus();
     status = false;
   }
@@ -63,7 +63,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("etage").style.backgroundColor = "inherit";
   if (form.etage.value == "") {
     statusEtage.innerText = "Indtast etage";
-    document.getElementById("etage").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("etage").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.etage.focus();
     status = false;
   }
@@ -71,7 +71,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("husnr").style.backgroundColor = "inherit";
   if (form.husnr.value == "") {
     statusHusnr.innerText = "Indtast hus nr";
-    document.getElementById("husnr").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("husnr").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.husnr.focus();
     status = false;
   }
@@ -79,7 +79,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("region").style.backgroundColor = "inherit";
   if (form.region.value == "") {
     statusRegion.innerText = "Vælg region";
-    document.getElementById("region").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("region").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.region.focus();
     status = false;
   }
@@ -87,7 +87,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("postNummer").style.backgroundColor = "inherit";
   if (form.postNummer.value == "" || isNaN(form.postNummer.value) || (form.postNummer.value < 4) || (form.postNummer.value > 4)) {
     statusPostnummer.innerText = "Skal indeholde fire tal";
-    document.getElementById("postNummer").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("postNummer").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.postNummer.focus();
     status = false;
   }
@@ -95,7 +95,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("land").style.backgroundColor = "inherit";
   if (form.land.value == "") {
     statusLand.innerText = "Vælg land";
-    document.getElementById("land").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("land").style.backgroundColor = "rgba(240, 95, 95, 0.281))";
     form.land.focus();
     status = false;
   }
@@ -103,7 +103,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("username").style.backgroundColor = "inherit";
   if (form.username.value == "") {
     statusUsername.innerText = "udfyld feltet";
-    document.getElementById("username").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("username").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.username.focus();
     status = false;
   }
@@ -112,7 +112,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("password").style.backgroundColor = "inherit";
   if (form.password.value == "" || form.password.length < 1) {
     statusPassword.innerText = "udfyld feltet";
-    document.getElementById("password").style.backgroundColor = "rgb(241, 69, 69)";
+    document.getElementById("password").style.backgroundColor = "rrgba(240, 95, 95, 0.281)";
     form.password.focus();
     status = false;
   }

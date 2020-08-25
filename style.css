@@ -1,68 +1,50 @@
 body {
-    background-color: rgb(95, 159, 243);
+  background-color: rgb(95, 159, 243);
 }
-
 form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 1em;
-    grid-gap: 0.5em;
-    padding: 2em;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 1em;
+  grid-gap: 0.5em;
+  padding: 2em;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
-
-.inputGroup,
-.addressGroup {
-    display: grid;
-    grid-template-columns: 1fr;
+.inputGroup, .addressGroup {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-input,
-select {
-    margin-bottom: 1em;
-    background-color: rgb(223, 223, 223);
-    border-radius: 5%;
+input, select {
+  margin-bottom: 1em;
+  background-color: rgb(223, 223, 223);
+  border-radius: 5%;
 }
-
 label {
-    font-weight: 600;
-    padding-bottom: 0.2em;
+  font-weight: 600;
+  padding-bottom: 0.2em;
 }
-
 input:focus {
-    border: 2px solid black;
+  border: 2px solid black;
 }
-
 button {
-    grid-area: 2/4;
-    width: 50%;
-    justify-self: end;
-    background-color: rgb(125, 248, 114);
+  grid-area: 2/4;
+  width: 50%;
+  justify-self: end;
+  background-color: rgb(125, 248, 114);
 }
-
 input::placeholder {
-    opacity: 1;
+  opacity: 1;
 }
-
 h1 {
-    text-align: center;
+  text-align: center;
 }
-
-
-/*.form-group {
-    display: grid;
-    grid-template-columns: ;
-}*/
-
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    display: grid;
-    justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
 }
-
 fieldset {
-    border: none;
+  border: none;
 }
