@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <h1>Registreringsformular</h1>
+        <form method="post" action="" novalidate>
+
+            <fieldset class="contact__information" role="contactinfo">
+                <div class="inputGroup">
+                    <label for="forNavn">Fornavn:</label>
+                    <input id="forNavn" type="text" name="forNavn" aria-describedby="forNavn" placeholder="John" required>
+                    <span class="statusMessage forNavn"></span>
+                </div>
+                <div class="inputGroup">
+                    <label for="efterNavn">efternavn:</label>
+                    <input id="efterNavn" type="text" name="efterNavn" aria-describedby="efterNavn" placeholder="Doe" required>
+                    <span class="statusMessage efterNavn"></span>
+                </div>
+                <div class="inputGroup">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" aria-describedby="email" placeholder="JohnDoe@gmail.com" required>
+                    <span class="statusMessage email"></span>
+                </div>
+            </fieldset>
+
+            <fieldset class="adresse__information" role="contactinfo">
+
+                <div class="addressGroup">
+                    <label for="gade">Gadenavn</label>
+                    <input type="text" name="gade" class="form-control" aria-describedby="gade" id="gade" placeholder="Frederiksberg Alle" required>
+                    <span class="statusMessage gade"></span>
+                </div>
+                <div class="addressGroup">
+                    <label for="etage">Etage</label>
+                    <input type="text" name="etage" class="form-control" id="etage" aria-describedby="etage" placeholder="st th" required>
+                    <span class="statusMessage etage"></span>
+                </div>
+                <div class="addressGroup">
+                    <label for="husnr">Husnummer</label>
+                    <input type="text" name="husnr" class="form-control" id="husnr" aria-describedby="husnr" placeholder="101A" required>
+                    <span class="statusMessage husnr"></span>
+                </div>
+            </fieldset>
+
+            <fieldset class="region__information" role="contactinfo">
+
+                <div class="addressGroup">
+                    <label for="by">By</label>
+                    <input type="text" name="by" class="form-control" aria-describedby="by" id="by" placeholder="Farum" required>
+                    <span class="statusMessage by"></span>
+                </div>
+
+                <div class="addressGroup">
+                    <label for="region">Region</label>
+                    <select name="region" id="region" class="form-control" aria-describedby="region" required>
+                      <option value=""></option>
+                      <option value="sjaelland">Sjælland</option>
+                      <option value="hovedstaden">Hovedstaden</option>
+                      <option value="sydDanmark">Sydanmark</option>
+                      <option value="midtJylland">Midtjylland</option>
+                      <option value="nordJylland">Nordjylland</option>
+                    </select>
+                    <span class="statusMessage region"></span>
+                </div>
+
+                <div class="addressGroup">
+                    <label for="postNummer">Postnummer</label>
+                    <input type="number" name="postNummer" class="form-control" id="postNummer" placeholder="3520" required>
+                    <span class="statusMessage postNummer"></span>
+                </div>
+
+
+                <div class="addressGroup">
+                    <label for="land">Land</label>
+                    <select name="land" id="land" class="form-control" required>
+                    <option value=""></option>
+                    <option value="danmark">Danmark</option>
+                  </select>
+                    <span class="statusMessage land"></span>
+                </div>
+
+            </fieldset>
+
+            <!-- slut-->
+            <fieldset role="contactinfo">
+                <div class="inputGroup">
+                    <label for="username">Vælg brugernavn</label>
+                    <input type="text" name="username" id="username" placeholder="lilleJytte80" required>
+                    <span class="statusMessage username"></span>
+                </div>
+
+                <div class="inputGroup">
+                    <label for="password">Vælg kodeord</label>
+                    <input type="password" name="password" id="password" required>
+                    <span class="statusMessage password"></span>
+                </div>
+            </fieldset>
+
+            <button type="submit">Registrer</button>
+        </form>
+    </main>
+
+    <script src="main.js" async defer></script>
+</body>
+
+</html>
