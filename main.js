@@ -95,7 +95,7 @@ form.addEventListener("submit", function(event) {
   document.getElementById("land").style.backgroundColor = "inherit";
   if (form.land.value == "") {
     statusLand.innerText = "Vælg land";
-    document.getElementById("land").style.backgroundColor = "rgba(240, 95, 95, 0.281))";
+    document.getElementById("land").style.backgroundColor = "rgba(240, 95, 95, 0.281)";
     form.land.focus();
     status = false;
   }
